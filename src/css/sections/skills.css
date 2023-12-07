@@ -4,13 +4,9 @@
 }
 
 .skills {
-  width: 100%;
-  min-height: 100vh;
   background-color: black;
 }
 .skills .skill-container {
-  width: 100%;
-  height: 50%;
   margin-top: 80px;
   display: flex;
   justify-content: center;

@@ -1,16 +1,8 @@
-.contact-container {
-  width: 100%;
-  min-height: 100vh;
-}
-
 .contact {
-  width: 100%;
-  height: 100%;
   background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.1)), url("../img/contact_back.webp") center no-repeat;
   background-size: cover;
 }
 .contact-details {
-  width: 100%;
   padding: 20px;
   margin-top: 80px;
   display: flex;

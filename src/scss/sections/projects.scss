@@ -1,8 +1,6 @@
 @use "../mixins/typography" as *;
 
 .projects {
-  width: 100%;
-  min-height: 100vh;
   background-color: #fff;
   background-attachment: fixed;
 }
@@ -17,8 +15,6 @@
 // project cards
 
 .card-container {
-  width: 100%;
-  min-height: 100vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
