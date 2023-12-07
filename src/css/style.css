@@ -151,6 +151,7 @@ body {
   background: linear-gradient(to bottom, rgb(0, 0, 0) 10%, rgba(0, 0, 0, 0.9) 60%, rgb(0, 0, 0));
   background-size: cover;
   overflow: hidden;
+  margin-top: 52.5px;
 }
 .parallax-intro .front1 {
   width: 400%;
