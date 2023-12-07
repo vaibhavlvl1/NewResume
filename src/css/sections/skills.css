@@ -1,0 +1,94 @@
+.page-heading2 {
+  text-align: center;
+  filter: drop-shadow(0px 0px 5px #fff) brightness(1);
+}
+
+.skills {
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+}
+.skills .skill-container {
+  width: 100%;
+  height: 50%;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px 0px;
+}
+.skills .skill-container .skill-card {
+  width: 100px;
+  height: 100px;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.skills .skill-container .skill-card .skill-details {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  position: absolute;
+  bottom: -100%;
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: all 0.2s linear;
+}
+.skills .skill-container .skill-card .skill-details h4 {
+  color: #fff;
+  padding: 5px;
+  filter: drop-shadow(0px 0px 5px #fff) brightness(1);
+}
+.skills .skill-container .skill-card .skill-details a {
+  text-decoration: none;
+  font-weight: 500;
+  border: 1px solid #999;
+  padding: 5px;
+  color: white;
+  border-radius: 20px;
+  font-size: 11px;
+}
+.skills .skill-container .skill-card .skill-details a:hover {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+.skills .skill-container .skill-card:nth-child(1) {
+  background: url("/src/img/python.svg") center no-repeat;
+  background-size: cover;
+}
+.skills .skill-container .skill-card:nth-child(2) {
+  background: url("/src/img/html.svg") center no-repeat;
+  background-size: cover;
+}
+.skills .skill-container .skill-card:nth-child(3) {
+  background: url("/src/img/css.svg") center no-repeat;
+  background-size: cover;
+}
+.skills .skill-container .skill-card:nth-child(4) {
+  background: url("/src/img/javascript.svg") center no-repeat;
+  background-size: cover;
+}
+.skills .skill-container .skill-card:nth-child(5) {
+  background: url("/src/img/sass.svg") center no-repeat;
+  background-size: cover;
+}
+.skills .skill-container .skill-card:nth-child(6) {
+  background: url("/src/img/bootstrap.svg") center no-repeat;
+  background-size: cover;
+}
+.skills .skill-container .skill-card:nth-child(7) {
+  background: url("/src/img/jquery.svg") center no-repeat;
+  background-size: cover;
+}
+
+.skill-card:hover .skill-details {
+  transform: translateY(-100px);
+}
+
+/*# sourceMappingURL=skills.css.map */

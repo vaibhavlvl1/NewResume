@@ -1,0 +1,111 @@
+@use "../mixins/typography" as *;
+
+// background images and setup
+
+.parallax-intro {
+  position: relative;
+  margin-top: 70px;
+  width: 100%;
+  min-height: calc(100vh - 70px);
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 0, 0, 0.9) 60%,
+    rgba(0, 0, 0, 1)
+  );
+  background-size: cover;
+  overflow: hidden;
+
+  .front1 {
+    width: 400%;
+    position: absolute;
+    bottom: 0;
+    transform: translate(-7%, calc(-50% + 120%));
+    z-index: 7;
+    transition: all 0.5s linear;
+  }
+}
+
+// profile picture and box
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 80%;
+  height: 70%;
+  overflow: hidden;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 0px 10px;
+
+  &_img {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    img {
+      width: 120px;
+      border: #fff 5px solid;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      filter: drop-shadow(0 0 15px #fff) drop-shadow(0 0 35px #fff);
+    }
+    h4 {
+      color: rgb(255, 255, 255);
+      @include text_glow;
+      z-index: 9;
+    }
+    h6 {
+      color: #ffffff;
+      @include text_glow;
+      z-index: 9;
+    }
+  }
+
+  &_intro {
+    color: #ffffff;
+    position: relative;
+
+    p {
+      @include text_glow;
+      letter-spacing: 1px;
+      i {
+        transform: translateY(-25%);
+      }
+    }
+  }
+}
+
+// responsive page
+
+@media (max-width: 576px) {
+  .parallax-intro {
+    margin: 0;
+
+    .profile {
+      height: 80%;
+      width: 70%;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .profile {
+    flex-direction: column;
+    width: 60%;
+    height: 70%;
+  }
+}
+
+@media (max-width: 576px) {
+  .profile {
+    height: 70%;
+  }
+}

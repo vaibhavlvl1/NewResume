@@ -1,0 +1,14 @@
+@mixin text_glow {
+  filter: drop-shadow(0px 0px 5px #fff) brightness(1);
+}
+
+@mixin text_shadow {
+  text-shadow: 0 20px 5px rgb(218, 215, 215);
+}
+
+@mixin centering {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,91 @@
+.parallax-intro {
+  position: relative;
+  margin-top: 70px;
+  width: 100%;
+  min-height: calc(100vh - 70px);
+  background: linear-gradient(to bottom, rgb(0, 0, 0) 10%, rgba(0, 0, 0, 0.9) 60%, rgb(0, 0, 0));
+  background-size: cover;
+  overflow: hidden;
+}
+.parallax-intro .front1 {
+  width: 400%;
+  position: absolute;
+  bottom: 0;
+  transform: translate(-7%, 70%);
+  z-index: 7;
+  transition: all 0.5s linear;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 80%;
+  height: 70%;
+  overflow: hidden;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0px 10px;
+}
+.profile_img {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.profile_img img {
+  width: 120px;
+  border: #fff 5px solid;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  filter: drop-shadow(0 0 15px #fff) drop-shadow(0 0 35px #fff);
+}
+.profile_img h4 {
+  color: rgb(255, 255, 255);
+  filter: drop-shadow(0px 0px 5px #fff) brightness(1);
+  z-index: 9;
+}
+.profile_img h6 {
+  color: #ffffff;
+  filter: drop-shadow(0px 0px 5px #fff) brightness(1);
+  z-index: 9;
+}
+.profile_intro {
+  color: #ffffff;
+  position: relative;
+}
+.profile_intro p {
+  filter: drop-shadow(0px 0px 5px #fff) brightness(1);
+  letter-spacing: 1px;
+}
+.profile_intro p i {
+  transform: translateY(-25%);
+}
+
+@media (max-width: 576px) {
+  .parallax-intro {
+    margin: 0;
+  }
+  .parallax-intro .profile {
+    height: 80%;
+    width: 70%;
+  }
+}
+@media (max-width: 992px) {
+  .profile {
+    flex-direction: column;
+    width: 60%;
+    height: 70%;
+  }
+}
+@media (max-width: 576px) {
+  .profile {
+    height: 70%;
+  }
+}
+
+/*# sourceMappingURL=intro_parallax_div.css.map */

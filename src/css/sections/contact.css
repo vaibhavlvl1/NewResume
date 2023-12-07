@@ -1,0 +1,183 @@
+.contact-container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.contact {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.1)), url("../img/contact_back.jpg") center no-repeat;
+  background-size: cover;
+}
+.contact-details {
+  width: 100%;
+  padding: 20px;
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+.contact-details .profile-card {
+  width: 350px;
+  height: 480px;
+  backdrop-filter: blur(55px);
+  border: 1px solid #999;
+  box-shadow: #fff 0px 0px 25px 1px;
+  position: relative;
+}
+.contact-details .profile-card .image {
+  width: 100%;
+  height: 30%;
+  background: url("../img/IMG_wide.jpg") 50% 50%;
+  background-size: cover;
+  margin-bottom: 10px;
+}
+.contact-details .profile-card .social-icons {
+  color: #fff;
+  padding: 0 15px;
+}
+.contact-details .profile-card .social-icons hr {
+  margin: 10px 0px 10px 0px;
+}
+.contact-details .profile-card .social-icons h4 {
+  text-align: left;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.contact-details .profile-card .social-icons p {
+  font-weight: 400;
+  font-size: 12px;
+  text-align: left;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+.contact-details .profile-card .social-icons .resume-view {
+  text-decoration: none;
+  color: #fff;
+  background-color: #1cb0f6;
+  border-radius: 10px;
+  font-size: 12px;
+  padding: 3px 8px;
+  position: relative;
+  margin-bottom: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.contact-details .profile-card .social-icons .resume-view:hover {
+  background-color: #117bac;
+}
+.contact-details .profile-card .social-icons .icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+  font-size: 25px;
+}
+.contact-details .profile-card .social-icons .icons a:hover {
+  transform: scale(1.1);
+}
+.contact-details .profile-card .social-icons .phone {
+  font-size: 15px;
+}
+.contact-details .profile-card .social-icons .phone i {
+  font-size: 15px;
+  margin-right: 5px;
+}
+.contact-details .profile-card .social-icons .mail {
+  font-size: 15px;
+}
+.contact-details .profile-card .social-icons .mail i {
+  font-size: 15px;
+  margin-right: 5px;
+}
+
+.contact-form {
+  width: 350px;
+  height: 450px;
+  backdrop-filter: blur(55px);
+  border: 1px #999 solid;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  box-shadow: #fff 0px 0px 25px 1px;
+}
+.contact-form h1 {
+  color: #fff;
+}
+.contact-form input {
+  width: 50%;
+  padding: 5px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
+  filter: drop-shadow(0px 0px 5px #fff) brightness(1);
+  border: #fff 1px solid;
+}
+.contact-form textarea {
+  width: 80%;
+  background-color: transparent;
+  color: #fff;
+  padding: 5px;
+  border: #fff 1px solid;
+}
+.contact-form button {
+  padding: 5px;
+  align-self: flex-start;
+  border: none;
+}
+.contact-form button:hover {
+  background-color: #fff;
+  color: #000;
+  box-shadow: #fff 0px 0px 25px 5px, #fff 0px 0px 45px 5px;
+  transform: scale(1.1);
+}
+
+@media (max-width: 992px) {
+  .contact-details {
+    gap: 20px;
+    padding: 5px;
+  }
+  .contact-form {
+    width: 330px;
+  }
+}
+@media (max-width: 768px) {
+  .contact-details {
+    gap: 80px;
+    padding: 5px;
+    flex-direction: column;
+    margin-top: 80px;
+  }
+}
+@media (max-width: 576px) {
+  .contact-details {
+    gap: 60px;
+    padding: 0px;
+    flex-direction: column;
+    margin-top: 80px;
+    height: auto;
+  }
+  .contact-details .profile-card {
+    width: 90%;
+    margin: 0;
+    padding: 0;
+    height: auto;
+  }
+  .contact-details .profile-card .image {
+    width: 100%;
+    height: 150px;
+  }
+  .contact-details .contact-form {
+    width: 80%;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */

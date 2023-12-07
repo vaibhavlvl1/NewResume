@@ -1,0 +1,23 @@
+// heading lightning
+@keyframes light_up {
+  0% {
+    filter: drop-shadow(0px 0px 0px #fff) brightness(1);
+    color: #212529;
+  }
+  50% {
+    filter: drop-shadow(0px 0px 0px #fff) brightness(10)
+      drop-shadow(0px 0px 2px #fff) brightness(10) drop-shadow(0px 0px 5px #fff)
+      brightness(10) drop-shadow(0px 0px 20px #fff) brightness(10)
+      drop-shadow(0px 0px 50px #fff) brightness(10);
+    color: #fff;
+  }
+
+  70% {
+    filter: drop-shadow(0px 0px 0px #fff) brightness(1);
+    color: #212529;
+  }
+  100% {
+    filter: drop-shadow(0px 0px 0px #fff) brightness(1);
+    color: #212529;
+  }
+}

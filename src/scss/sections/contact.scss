@@ -1,0 +1,208 @@
+@use "../mixins/typography" as *;
+@use "../mixins/hover" as *;
+
+.contact-container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.contact {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)),
+    url("../img/contact_back.jpg") center no-repeat;
+  background-size: cover;
+
+  &-details {
+    width: 100%;
+    padding: 20px;
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+
+    .profile-card {
+      width: 350px;
+      height: 480px;
+      backdrop-filter: blur(55px);
+      border: 1px solid #999;
+      box-shadow: #fff 0px 0px 25px 1px;
+      position: relative;
+
+      .image {
+        width: 100%;
+        height: 30%;
+        background: url("../img/IMG_wide.jpg") 50% 50%;
+        background-size: cover;
+        margin-bottom: 10px;
+        // transform: scale(2);
+      }
+
+      .social-icons {
+        color: #fff;
+        padding: 0 15px;
+
+        hr {
+          margin: 10px 0px 10px 0px;
+        }
+
+        h4 {
+          text-align: left;
+          font-size: 18px;
+          margin-bottom: 5px;
+        }
+        p {
+          font-weight: 400;
+          font-size: 12px;
+          text-align: left;
+          margin-bottom: 5px;
+          letter-spacing: 1px;
+        }
+
+        .resume-view {
+          text-decoration: none;
+          color: #fff;
+          background-color: #1cb0f6;
+          border-radius: 10px;
+          font-size: 12px;
+          padding: 3px 8px;
+          position: relative;
+          margin-bottom: 5px;
+          outline: none;
+          border: none;
+          cursor: pointer;
+
+          &:hover {
+            background-color: #117bac;
+          }
+        }
+
+        .icons {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 10px;
+          margin-bottom: 5px;
+          font-size: 25px;
+
+          a:hover {
+            transform: scale(1.1);
+          }
+        }
+
+        .phone {
+          font-size: 15px;
+          i {
+            font-size: 15px;
+            margin-right: 5px;
+          }
+        }
+
+        .mail {
+          font-size: 15px;
+          i {
+            font-size: 15px;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.contact-form {
+  width: 350px;
+  height: 450px;
+  backdrop-filter: blur(55px);
+  border: 1px #999 solid;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  box-shadow: #fff 0px 0px 25px 1px;
+
+  h1 {
+    color: #fff;
+  }
+
+  input {
+    width: 50%;
+    padding: 5px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: #ffffff;
+    @include text_glow;
+    border: #fff 1px solid;
+  }
+  textarea {
+    width: 80%;
+    background-color: transparent;
+    color: #fff;
+    padding: 5px;
+    border: #fff 1px solid;
+  }
+
+  button {
+    padding: 5px;
+    align-self: flex-start;
+    border: none;
+
+    &:hover {
+      @include glow_white;
+      transform: scale(1.1);
+    }
+  }
+}
+
+// responsive design
+
+@media (max-width: 992px) {
+  .contact-details {
+    gap: 20px;
+    padding: 5px;
+  }
+
+  .contact-form {
+    width: 330px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-details {
+    gap: 80px;
+    padding: 5px;
+    flex-direction: column;
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-details {
+    gap: 60px;
+    padding: 0px;
+    flex-direction: column;
+    margin-top: 80px;
+    height: auto;
+
+    .profile-card {
+      width: 90%;
+      margin: 0;
+      padding: 0;
+      height: auto;
+
+      .image {
+        width: 100%;
+        height: 150px;
+      }
+    }
+
+    .contact-form {
+      width: 80%;
+    }
+  }
+}

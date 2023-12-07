@@ -1,0 +1,39 @@
+.heading-line::after {
+  content: "";
+  width: 20%;
+  background-color: #000;
+  position: absolute;
+  height: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.heading-line::before {
+  content: "";
+  width: 10%;
+  background-color: #000;
+  position: absolute;
+  height: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.heading-line2::after {
+  content: "";
+  width: 20%;
+  background-color: #fff;
+  position: absolute;
+  height: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.heading-line2::before {
+  content: "";
+  width: 10%;
+  background-color: #fff;
+  position: absolute;
+  height: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}

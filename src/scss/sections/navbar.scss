@@ -1,0 +1,131 @@
+@use "../mixins/hover" as *;
+@use "../mixins/animations" as *;
+
+// menubar layouts
+
+.menubar {
+  height: 70px;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 99;
+
+  h4 {
+    color: #fff;
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: light_up 5s cubic-bezier(0, 1.74, 1, -0.47) infinite;
+    font-size: 20px;
+  }
+
+  img {
+    width: 70px;
+    margin-left: 20px;
+  }
+
+  &-list {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+    padding: 5px 20px;
+    background-color: #000;
+    z-index: 1;
+
+    &-item {
+      list-style: none;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+        padding: 5px 8px;
+        border-radius: 20px;
+      }
+    }
+  }
+}
+
+// menu hover effects
+
+.menubar-list-item:hover {
+  a {
+    @include glow_white;
+  }
+}
+
+// button
+
+.menu-collapse {
+  font-size: 1.5rem;
+  background-color: #000;
+  color: #fff;
+  outline: none;
+  border: none;
+  padding: 2px 4px;
+  border-radius: 5px;
+  display: none;
+  &:hover {
+    @include glow_white;
+  }
+}
+
+.menubar-list-item.active {
+  a {
+    @include glow_white;
+  }
+}
+
+// responsive menubar
+
+@media (max-width: 992px) {
+  .menubar {
+    h4 {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .menu-collapse {
+    display: block;
+    margin-right: 20px;
+  }
+
+  .menubar {
+    position: relative;
+
+    h4 {
+      display: block;
+    }
+
+    &-list {
+      display: block;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      gap: 15px;
+      padding: 0;
+      position: absolute;
+      bottom: -260%;
+      right: -100%;
+      text-align: center;
+      padding-bottom: 20px;
+      backdrop-filter: blur(10px);
+
+      &-item {
+        list-style: none;
+        margin: 15px 0 15px 0;
+
+        a {
+          color: #fff;
+          text-decoration: none;
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+}

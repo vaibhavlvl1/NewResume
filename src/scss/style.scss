@@ -1,0 +1,46 @@
+// resets
+
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+@import "../scss/sections/navbar.scss";
+@import "../scss/sections/intro_parallax_div.scss";
+@import "../scss/sections/projects.scss";
+@import "../scss/sections/skills.scss";
+@import "../scss/components/headingline.scss";
+@import "../scss/sections/contact.scss";
+@import "../scss/sections/footer.scss";
+
+// up arrow
+
+.arrow_up {
+  position: absolute;
+  font-size: 40px;
+  right: 3%;
+  bottom: 2%;
+  color: #f60404;
+
+  &:hover {
+    color: #fff;
+  }
+}

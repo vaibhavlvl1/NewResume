@@ -1,0 +1,83 @@
+@use "../mixins/typography" as *;
+
+.projects {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+  background-attachment: fixed;
+}
+
+// page heading
+
+.page-heading {
+  text-align: center;
+  @include text-shadow;
+}
+
+// project cards
+
+.card-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 90px;
+  margin-bottom: 50px;
+}
+
+.cards {
+  border: 5px double #444;
+  width: 300px;
+  height: 300px;
+  // padding: 19px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px 1px #000;
+  position: relative;
+  background-image: radial-gradient(
+    farthest-corner at 190% 205%,
+    rgb(225, 224, 224) 60%,
+    white 0
+  );
+
+  a {
+    text-decoration: none;
+    button {
+      width: 70px;
+      padding: 5px;
+      position: absolute;
+      margin-top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #000;
+      border-radius: 20px;
+      color: #fff;
+      cursor: pointer;
+      letter-spacing: 1px;
+      outline: none;
+      border: none;
+      overflow: hidden;
+
+      &:hover {
+        scale: 1.05;
+        box-shadow: 0 10px 20px 0.5px #777;
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+    margin-bottom: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  h2 {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  p {
+    text-align: center;
+  }
+}
