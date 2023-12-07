@@ -136,8 +136,10 @@
     border: none;
     background-color: transparent;
     color: #ffffff;
-    @include text_glow;
     border: #fff 1px solid;
+    font-size: 12px;
+    font-family: poppins, sans-serif;
+    letter-spacing: 1px;
   }
   textarea {
     width: 80%;
@@ -145,6 +147,7 @@
     color: #fff;
     padding: 5px;
     border: #fff 1px solid;
+    letter-spacing: 1px;
   }
 
   button {
