@@ -367,31 +367,31 @@ body {
   background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 .skills .skill-container .skill-card:nth-child(1) {
-  background: url("/src/img/python.svg") center no-repeat;
+  background: url("../img/python.svg") center no-repeat;
   background-size: cover;
 }
 .skills .skill-container .skill-card:nth-child(2) {
-  background: url("/src/img/html.svg") center no-repeat;
+  background: url("../img/html.svg") center no-repeat;
   background-size: cover;
 }
 .skills .skill-container .skill-card:nth-child(3) {
-  background: url("/src/img/css.svg") center no-repeat;
+  background: url("../img/css.svg") center no-repeat;
   background-size: cover;
 }
 .skills .skill-container .skill-card:nth-child(4) {
-  background: url("/src/img/javascript.svg") center no-repeat;
+  background: url("../img/javascript.svg") center no-repeat;
   background-size: cover;
 }
 .skills .skill-container .skill-card:nth-child(5) {
-  background: url("/src/img/sass.svg") center no-repeat;
+  background: url("../img/sass.svg") center no-repeat;
   background-size: cover;
 }
 .skills .skill-container .skill-card:nth-child(6) {
-  background: url("/src/img/bootstrap.svg") center no-repeat;
+  background: url("../img/bootstrap.svg") center no-repeat;
   background-size: cover;
 }
 .skills .skill-container .skill-card:nth-child(7) {
-  background: url("/src/img/jquery.svg") center no-repeat;
+  background: url("../img/jquery.svg") center no-repeat;
   background-size: cover;
 }
 
