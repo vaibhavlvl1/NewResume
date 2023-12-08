@@ -614,6 +614,10 @@ footer {
   font-size: 13px;
   gap: 50px;
 }
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
 
 @media (max-width: 484px) {
   footer {

@@ -8,6 +8,11 @@ footer {
   padding: 0px 15px;
   font-size: 13px;
   gap: 50px;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
 }
 
 @media (max-width: 484px) {
