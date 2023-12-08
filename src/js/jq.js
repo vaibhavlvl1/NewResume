@@ -5,6 +5,7 @@ $(function () {
     $(".menu-collapse").on("click", function () {
 
         if (flag == false) {
+
             $(".menubar-list").animate({ right: "0" }, "fast")
             flag = true;
         }
