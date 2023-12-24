@@ -29,7 +29,7 @@ $(function () {
     window.addEventListener("scroll", () => {
         let offset = window.scrollY;
 
-        $(".front1").css('transform', `translate(-7%,calc(70% - ${offset * 1.0}px))`);
+        $(".front1").css('transform', `translate(-7%,calc(70% - ${offset * -1.0}px))`);
 
     })
 
