@@ -13,3 +13,5 @@ PINE TREE LINE - <a href="https://www.vecteezy.com/free-vector/woods">Woods Vect
 <a href="https://iconscout.com/icons/bootstrap" class="text-underline font-size-sm" target="_blank">Bootstrap</a> by <a href="https://iconscout.com/contributors/icon-54" class="text-underline font-size-sm">Icon 54</a> on <a href="https://iconscout.com" class="text-underline font-size-sm">IconScout</a>
 
 <a href="https://iconscout.com/icons/jquery" class="text-underline font-size-sm" target="_blank">Jquery</a> by <a href="https://iconscout.com/contributors/icon-mafia" class="text-underline font-size-sm" target="_blank">Icon Mafia</a>
+
+<a href="https://www.freepik.com/free-vector/gradient-mountain-landscape_19852071.htm#page=2&query=parallax%20background&position=8&from_view=keyword&track=ais&uuid=4fdec117-7d96-4270-8a1a-68f713e7496d">Freepik</a>

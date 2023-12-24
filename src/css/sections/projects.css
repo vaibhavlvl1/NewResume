@@ -1,6 +1,8 @@
 .projects {
+  position: relative;
   background-color: #fff;
   background-attachment: fixed;
+  z-index: 50;
 }
 
 .page-heading {
@@ -49,11 +51,14 @@
   scale: 1.05;
   box-shadow: 0 10px 20px 0.5px #777;
 }
-.cards img {
+.cards .vid-container {
   width: 100%;
   margin-bottom: 20px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+.cards .vid-container video {
+  width: 100%;
 }
 .cards h2 {
   text-align: center;

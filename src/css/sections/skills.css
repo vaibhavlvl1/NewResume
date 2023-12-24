@@ -5,6 +5,8 @@
 
 .skills {
   background-color: black;
+  z-index: 50;
+  position: relative;
 }
 .skills .skill-container {
   margin-top: 80px;

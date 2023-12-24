@@ -1,4 +1,5 @@
 $(function () {
+
     // adding menu button expand and collapse functionality
     let flag = false;
 
@@ -22,17 +23,11 @@ $(function () {
         $(this).addClass("active").siblings().removeClass('active');
     })
 
+})
 
 
-    // scroll 
-
-    window.addEventListener("scroll", () => {
-        let offset = window.scrollY;
-
-        $(".front1").css('transform', `translate(-7%,calc(70% - ${offset * 1.0}px))`);
-
-    })
-
+window.addEventListener('scroll', e => {
+    document.documentElement.style.setProperty('--scrollTop', `${this.scrollY * .2}px`) // Update method
 })
 
 

@@ -1,8 +1,10 @@
 @use "../mixins/typography" as *;
 
 .projects {
+  position: relative;
   background-color: #fff;
   background-attachment: fixed;
+  z-index: 50;
 }
 
 // page heading
@@ -62,11 +64,15 @@
     }
   }
 
-  img {
+  .vid-container {
     width: 100%;
     margin-bottom: 20px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+
+    video {
+      width: 100%;
+    }
   }
   h2 {
     text-align: center;

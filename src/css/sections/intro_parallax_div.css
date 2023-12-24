@@ -1,89 +1,105 @@
 .parallax-intro {
   position: relative;
-  min-height: calc(100vh - 70px);
-  background: linear-gradient(to bottom, rgb(0, 0, 0) 10%, rgba(0, 0, 0, 0.9) 60%, rgb(0, 0, 0));
-  background-size: cover;
+  height: calc(100vh - 70px);
+  background-color: black;
   overflow: hidden;
   margin-top: 52.5px;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
-.parallax-intro .front1 {
-  width: 400%;
+.parallax-intro .layers {
+  height: 100%;
   position: absolute;
+  width: 100%;
+  transition: transform 0.75s cubic-bezier(0.075, 0.5, 0, 1);
+}
+.parallax-intro .base {
+  background: url("../img/SVG/layer-base.webp") center no-repeat;
+  background-size: cover;
+  z-index: 2;
+}
+.parallax-intro .middle {
+  background: url("../img/SVG/layer-middle.webp") center no-repeat;
+  background-size: cover;
+  z-index: 4;
+}
+.parallax-intro .front {
+  background: url("../img/SVG/layer-front.webp") center no-repeat;
+  background-size: cover;
+  z-index: 6;
+}
+.parallax-intro .ground {
+  background: linear-gradient(to top, rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0)), url("../img/SVG/ground.webp") center no-repeat;
+  background-size: cover;
   bottom: 0;
-  transform: translate(-7%, 70%);
-  z-index: 7;
-  transition: all 0.5s linear;
+  transform: translate(0%, 50%);
+  z-index: 8;
 }
 
 .profile {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute;
-  width: 80%;
-  height: 70%;
-  overflow: hidden;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 0px 10px;
-}
-.profile_img {
-  width: 100%;
+  width: 50%;
+  height: 50%;
+  z-index: 3;
+  left: 0;
+  right: 0;
+  top: -40%;
+  bottom: 0;
+  margin: auto;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 20px;
+  transition: transform 0.75s cubic-bezier(0.075, 0.5, 0, 1);
 }
-.profile_img img {
-  width: 120px;
-  border: #fff 5px solid;
-  border-radius: 50%;
-  margin-bottom: 10px;
-  filter: drop-shadow(0 0 15px #fff) drop-shadow(0 0 35px #fff);
+.profile .img-wrapper {
+  justify-self: flex-start;
 }
-.profile_img h4 {
-  color: rgb(255, 255, 255);
+.profile .img-wrapper img {
+  width: 200px;
+  height: 200px;
+  border-radius: 150px;
+  border: 10px double #fff;
   filter: drop-shadow(0px 0px 5px #fff) brightness(1);
-  z-index: 9;
 }
-.profile_img h6 {
-  color: #ffffff;
+.profile .about-me-wrapper {
+  margin-top: 20px;
+  color: #fff;
   filter: drop-shadow(0px 0px 5px #fff) brightness(1);
-  z-index: 9;
-}
-.profile_intro {
-  color: #ffffff;
-  position: relative;
-}
-.profile_intro p {
-  filter: drop-shadow(0px 0px 5px #fff) brightness(1);
-  letter-spacing: 1px;
-}
-.profile_intro p i {
-  transform: translateY(-25%);
+  font-size: 25px;
+  text-align: center;
 }
 
-@media (max-width: 576px) {
-  .parallax-intro {
-    margin: 0;
+@media (max-width: 1200px) {
+  .profile {
+    width: 80%;
+    z-index: 5;
   }
-  .parallax-intro .profile {
-    height: 80%;
-    width: 70%;
+  .profile .img-wrapper {
+    align-self: center;
+  }
+  .profile .about-me-wrapper {
+    align-self: center;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 576px) {
   .profile {
+    width: 80%;
+    z-index: 9;
     flex-direction: column;
-    width: 60%;
-    height: 70%;
+    padding-top: 80px;
   }
-}
-@media (max-width: 576px) {
-  .profile {
-    height: 70%;
+  .profile .img-wrapper img {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    border: 10px double #fff;
+    filter: drop-shadow(0px 0px 5px #fff) brightness(1);
+  }
+  .profile .about-me-wrapper {
+    font-size: 20px;
+    text-align: center;
   }
 }
 

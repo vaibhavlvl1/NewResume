@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Website</title>
+        <title>My Portfolio</title>
 
         <!-- stylesheet -->
         <link rel="stylesheet" href="css/style.css">
@@ -22,7 +22,7 @@
     </head>
 
     <body>
-        <div class="container">
+        <div class="container" id="container">
 
             <!-- menubar start -->
             <div class="menubar">
@@ -41,29 +41,27 @@
             <!-- intro -->
 
             <div class="parallax-intro" id="1">
-                <img src="img/front2.webp" alt="" class="front1">
-
-
-                <section class="profile">
-                    <div class="profile_img">
-                        <img src="img/pp1.webp" alt="">
-                        <h4>Vaibhav Sutar</h4>
-                        <h6>MSc Physics</h6>
-                        <h6>Aspiring Web Developer</h6>
+                <div class="profile">
+                    <div class="img-wrapper">
+                        <img src="img/pp1.png" alt="">
                     </div>
-                    <div class="profile_intro">
-
+                    <div class="about-me-wrapper">
                         <p>
-                            <i class="fa-solid fa-quote-left left"></i>
-                            Hello. I am Vaibhav Sutar.I am looking forward to my first job experience in Web
-                            Development.
-                            I am hard worker and quick learner. Any opportunities are welcomed.
-                            <i class="fa-solid fa-quote-right right"></i>
+                            <i class="fa fa-quote-left"></i>
+                            Hello, I am Vaibhav Sutar, I am starting as fresher in Web Development and looking forward
+                            to my first work experience.Any opportunities are welcomed.
+                            <i class="fa fa-quote-right"></i>
                         </p>
                     </div>
-                </section>
+                </div>
 
+                <div class="layers base"></div>
+                <div class="layers middle"></div>
+                <div class="layers front"></div>
+                <div class="layers ground"></div>
             </div>
+
+
             <!-- intro end -->
 
             <!-- project start -->
@@ -79,28 +77,34 @@
 
                 <section class="card-container">
                     <div class="cards">
-                        <img src="img/project1.webp" alt="project 1"></img>
+                        <div class="vid-container"><video src="vids/grand_hotel.mp4" loop="true" autoplay="on"></video>
+                        </div>
                         <h2>Grand Hotel</h2>
                         <p> HTML CSS </p>
                         <a href="https://vaibhavlvl1.github.io/grand_hotel/" target="_blank"><button
                                 class="visit-btn">VISIT</button></a>
                     </div>
                     <div class="cards">
-                        <img src="img/project2.webp" alt="project 2"></img>
+                        <div class="vid-container"><video src="vids/photosharing_app.mp4" loop="true"
+                                autoplay="on"></video></div>
                         <h2>Photosharing Website</h2>
                         <p>HTML CSS SASS BOOTSTRAP</p>
                         <a href="https://vaibhavlvl1.github.io/Photosharing-website/" target="_blank"><button
                                 class="visit-btn">VISIT</button></a>
                     </div>
                     <div class="cards">
-                        <img src="img/project3.webp" alt="project 3"></img>
+                        <div class="vid-container"><video src="vids/furniture_store.mp4" loop="true"
+                                autoplay="on"></video>
+                        </div>
                         <h2>Furniture Store</h2>
                         <p>HTML CSS JAVASCRIPT</p>
                         <a href="https://vaibhavlvl1.github.io/furnitureStore/" target="_blank"><button
                                 class="visit-btn">VISIT</button></a>
                     </div>
                     <div class="cards">
-                        <img src="img/project4.webp" alt="project 4"></img>
+                        <div class="vid-container"><video src="vids/company_website.mp4" loop="true"
+                                autoplay="on"></video>
+                        </div>
                         <h2>Company Website</h2>
                         <p>HTML CSS SASS BOOTSTRAP JS</p>
                         <a href="https://vaibhavlvl1.github.io/CompanyWebsite/" target="_blank"><button
@@ -108,7 +112,9 @@
                     </div>
 
                     <div class="cards">
-                        <img src="img/project5.webp" alt="project 5"></img>
+                        <div class="vid-container"><video src="vids/hamburger_menu.mp4" loop="true"
+                                autoplay="on"></video>
+                        </div>
                         <h2>Food Menu</h2>
                         <p>HTML CSS JAVASCRIPT</p>
                         <a href="https://vaibhavlvl1.github.io/HamburgerMenu/" target="_blank"><button
@@ -264,8 +270,16 @@
 
 
         <!-- <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script> -->
-        <script src="jquery.min.js"></script>
+
+
+        <script src="../node_modules/jquery/dist/jquery.js"></script>
         <script src="js/jq.js"></script>
+
+        <script>
+            if (screen.width >= 576) {
+                document.body.appendChild(document.createElement('script')).src = 'js/parallax.js';
+            }
+        </script>
     </body>
 
 </html>
