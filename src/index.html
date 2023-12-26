@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Portfolio</title>
 
+        <link rel="shortcut icon" href="#">
+
         <!-- stylesheet -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/fontawesome.css">
@@ -19,10 +21,12 @@
             rel="stylesheet">
 
         <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
 
     <body>
-        <div class="container" id="container">
+        <div class="container">
 
             <!-- menubar start -->
             <div class="menubar">
@@ -139,14 +143,14 @@
                 <div class="heading-line2" style="background-color: #fff;"></div>
 
                 <section class="skill-container">
-                    <div class="skill-card">
+                    <div class="skill-card" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
                         <div class="skill-details">
                             <h4>Python</h4>
                             <a href="img/cert/Python-excellence.pdf" target="_blank">View Certificate</a>
                         </div>
                     </div>
 
-                    <div class="skill-card">
+                    <div class="skill-card" data-aos="flip-up" data-aos-offset="200">
                         <div class="skill-details">
                             <h4>HTML</h4>
                             <a href="img/cert/certificate-html-css-javascript-course-build-6-creative-projects.jpeg">View
@@ -154,7 +158,7 @@
                         </div>
                     </div>
 
-                    <div class="skill-card">
+                    <div class="skill-card" data-aos="flip-up" data-aos-offset="220">
                         <div class="skill-details">
                             <h4>CSS</h4>
                             <a href="img/cert/certificate-html-css-javascript-course-build-6-creative-projects.jpeg">View
@@ -162,7 +166,7 @@
                         </div>
                     </div>
 
-                    <div class="skill-card">
+                    <div class="skill-card" data-aos="flip-up" data-aos-offset="240">
                         <div class="skill-details">
                             <h4>Javascript</h4>
                             <a href="img/cert/certificate-html-css-javascript-course-build-6-creative-projects.jpeg">View
@@ -170,20 +174,20 @@
                         </div>
                     </div>
 
-                    <div class="skill-card">
+                    <div class="skill-card" data-aos="flip-up" data-aos-offset="260">
                         <div class="skill-details">
                             <h4>SASS</h4>
                             <!-- <a href="#">View Certificate</a> -->
                         </div>
                     </div>
 
-                    <div class="skill-card">
+                    <div class="skill-card" data-aos="flip-up" data-aos-offset="280">
                         <div class="skill-details">
                             <h4>Bootstrap</h4>
                             <!-- <a href="#">View Certificate</a> -->
                         </div>
                     </div>
-                    <div class="skill-card">
+                    <div class="skill-card" data-aos="fade-left" data-aos-offset="200">
                         <div class="skill-details">
                             <h4>JQuery</h4>
                             <!-- <a href="#">View Certificate</a> -->
@@ -206,7 +210,7 @@
                     <h1 class="page-heading2" style="color:#fff">CONTACT ME</h1>
                     <div class="heading-line2"></div>
                     <section class="contact-details">
-                        <div class="profile-card">
+                        <div class="profile-card" data-aos="fade-up" data-aos-duration="2000">
                             <div class="image"></div>
                             <div class="social-icons">
                                 <h4> Vaibhav Sutar</h4>
@@ -235,7 +239,7 @@
                             </div>
                         </div>
                         <form class="contact-form" name="contactMe" action="https://formspree.io/f/xjvqnyrv"
-                            method="post">
+                            method="post" data-aos="fade-down" data-aos-duration="2000">
                             <h1>Send Me A Message !!
                             </h1>
                             <input name="Name" type="text" placeholder="Your Name">
@@ -270,18 +274,17 @@
 
 
 
-        <!-- <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script> -->
 
 
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="jquery.min.js"></script>
         <script src="js/parallax.js"></script>
         <script src="js/jq.js"></script>
 
         <script>
-            if (screen.width >= 576) {
-                document.body.appendChild(document.createElement('script')).src = 'js/parallax.js';
-            }
+            AOS.init();
         </script>
+
     </body>
 
 </html>

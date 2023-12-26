@@ -29,5 +29,3 @@ $(function () {
 window.addEventListener('scroll', e => {
     document.documentElement.style.setProperty('--scrollTop', `${this.scrollY * .2}px`) // Update method
 })
-
-

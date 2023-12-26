@@ -662,4 +662,12 @@ footer a {
   color: #fff;
 }
 
+@media (min-width: 768px) {
+  .projects,
+  .skills,
+  .contact-container {
+    scroll-margin-top: -250px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -41,3 +41,13 @@ body {
     color: #fff;
   }
 }
+
+// responsive anchor links
+
+@media (min-width: 768px) {
+  .projects,
+  .skills,
+  .contact-container {
+    scroll-margin-top: -250px;
+  }
+}
