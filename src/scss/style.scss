@@ -36,6 +36,7 @@ body {
   right: 3%;
   bottom: 2%;
   color: #f60404;
+  z-index: 51;
 
   &:hover {
     color: #fff;
@@ -48,6 +49,6 @@ body {
   .projects,
   .skills,
   .contact-container {
-    scroll-margin-top: -250px;
+    scroll-margin-top: 70px;
   }
 }

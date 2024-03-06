@@ -7,6 +7,10 @@
   background-color: black;
   z-index: 50;
   position: relative;
+  margin-top: -7px;
+}
+.skills svg {
+  transform: translateY(7px);
 }
 .skills .skill-container {
   margin-top: 80px;
@@ -81,7 +85,7 @@
   background-size: cover;
 }
 .skills .skill-container .skill-card:nth-child(7) {
-  background: url("../img/jquery.svg") center no-repeat;
+  background: url("../img/wordpress.webp") center no-repeat;
   background-size: cover;
 }
 

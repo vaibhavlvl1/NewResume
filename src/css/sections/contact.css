@@ -1,6 +1,16 @@
+.contact-container {
+  position: relative;
+  background: linear-gradient(rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0.3));
+  padding-top: 7rem;
+}
+
+.page-heading3 {
+  text-align: center;
+  text-shadow: 0 20px 5px rgb(218, 215, 215);
+}
+
 .contact {
-  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.1)), url("../img/contact_back.webp") center no-repeat;
-  background-size: cover;
+  position: relative;
 }
 .contact-details {
   padding: 20px;
@@ -133,6 +143,16 @@
   color: #000;
   box-shadow: #fff 0px 0px 25px 5px, #fff 0px 0px 45px 5px;
   transform: scale(1.1);
+}
+
+.video-bg > video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 100%;
+  min-width: 100%;
+  z-index: -1;
 }
 
 @media (max-width: 992px) {

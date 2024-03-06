@@ -9,6 +9,11 @@
   background-color: black;
   z-index: 50;
   position: relative;
+  margin-top: -7px;
+
+  svg {
+    transform: translateY(7px);
+  }
 
   .skill-container {
     margin-top: 80px;
@@ -99,7 +104,7 @@
       }
 
       &:nth-child(7) {
-        background: url("../img/jquery.svg") center no-repeat;
+        background: url("../img/wordpress.webp") center no-repeat;
         background-size: cover;
       }
     }

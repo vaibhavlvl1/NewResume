@@ -147,10 +147,10 @@ body {
 }
 .parallax-intro {
   position: relative;
-  height: calc(100vh - 70px);
+  height: 100vh;
   background-color: black;
   overflow: hidden;
-  margin-top: 52.5px;
+  margin-top: 52px;
   transform-style: preserve-3d;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -328,6 +328,10 @@ body {
   background-color: black;
   z-index: 50;
   position: relative;
+  margin-top: -7px;
+}
+.skills svg {
+  transform: translateY(7px);
 }
 .skills .skill-container {
   margin-top: 80px;
@@ -402,7 +406,7 @@ body {
   background-size: cover;
 }
 .skills .skill-container .skill-card:nth-child(7) {
-  background: url("../img/jquery.svg") center no-repeat;
+  background: url("../img/wordpress.webp") center no-repeat;
   background-size: cover;
 }
 
@@ -450,9 +454,19 @@ body {
   transform: translateX(-50%);
 }
 
+.contact-container {
+  position: relative;
+  background: linear-gradient(rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0.3));
+  padding-top: 7rem;
+}
+
+.page-heading3 {
+  text-align: center;
+  text-shadow: 0 20px 5px rgb(218, 215, 215);
+}
+
 .contact {
-  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.1)), url("../img/contact_back.webp") center no-repeat;
-  background-size: cover;
+  position: relative;
 }
 .contact-details {
   padding: 20px;
@@ -587,6 +601,16 @@ body {
   transform: scale(1.1);
 }
 
+.video-bg > video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 100%;
+  min-width: 100%;
+  z-index: -1;
+}
+
 @media (max-width: 992px) {
   .contact-details {
     gap: 20px;
@@ -657,6 +681,7 @@ footer a {
   right: 3%;
   bottom: 2%;
   color: #f60404;
+  z-index: 51;
 }
 .arrow_up:hover {
   color: #fff;
@@ -666,7 +691,7 @@ footer a {
   .projects,
   .skills,
   .contact-container {
-    scroll-margin-top: -250px;
+    scroll-margin-top: 70px;
   }
 }
 

@@ -1,10 +1,21 @@
 @use "../mixins/typography" as *;
 @use "../mixins/hover" as *;
 
+.contact-container {
+  position: relative;
+  background: linear-gradient(rgba(0,0,0,1) 50%,rgba(0,0,0,0.3));
+  padding-top: 7rem;
+  
+}
+
+.page-heading3 {
+  text-align: center;
+  @include text_shadow;
+}
+
 .contact {
-  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)),
-    url("../img/contact_back.webp") center no-repeat;
-  background-size: cover;
+  position: relative;
+  
 
   &-details {
     padding: 20px;
@@ -152,6 +163,18 @@
       transform: scale(1.1);
     }
   }
+}
+
+
+
+.video-bg > video{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  min-height: 100%;
+  min-width: 100%;
+  z-index: -1;
 }
 
 // responsive design
